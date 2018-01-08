@@ -27,3 +27,36 @@
     font-weight: normal;
     color: #666;
 }
+
+// 自定义TabBar图标
+.ion-ios-coupon:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: no-repeat url('../assets/imgs/icon_coupon_select.png');
+}
+
+.ion-ios-coupon-outline {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: no-repeat url('../assets/imgs/icon_coupon.png');
+}
+
+.ion-ios-callwater:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: no-repeat url('../assets/imgs/icon_callwater_select.png');
+}
+
+.ion-ios-callwater-outline {
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: no-repeat url('../assets/imgs/icon_callwater.png');
+}
