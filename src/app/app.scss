@@ -14,3 +14,16 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+////////////////// 全局自定义的一些APP样式 //////////////////////
+
+// 处理ion-refresher显示bug
+.has-refresher > .scroll-content {
+    // top: -1px !important;
+    border: 0;
+}
+
+.toolbar-title-ios, .toolbar-title-md {
+    font-weight: normal;
+    color: #666;
+}

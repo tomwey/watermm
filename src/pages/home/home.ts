@@ -11,6 +11,25 @@ export class HomePage {
 
   }
 
+  loadData(): Promise<any> {
+    return new Promise((resolve) => {
+      resolve(true);
+    });
+  }
+
+  doRefresh(ev) {
+    this.loadData()
+      .then(() => {
+        if (ev) {
+          ev.complete();
+        }
+      });
+  }
+
+  openItem(item) {
+
+  }
+
   dataList: any = [
     {
       ID: '',
