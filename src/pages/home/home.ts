@@ -11,4 +11,11 @@ export class HomePage {
 
   }
 
+  dataList: any = [
+    {
+      ID: '',
+      cover: 'assets/imgs/img_default_cover.png',
+    }
+  ];
+
 }

@@ -1,3 +1,6 @@
 page-home {
-
+    .card-ios, .card-md {
+        border-radius: 0;
+        box-shadow: none;
+    }
 }

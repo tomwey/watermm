@@ -5,5 +5,7 @@
 </ion-header>
 
 <ion-content>
-  
+  <ion-card *ngFor="let item of dataList" tappable (tap)="openItem(item);">
+    <img [src]="item.cover">
+  </ion-card>
 </ion-content>
