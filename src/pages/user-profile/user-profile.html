@@ -7,12 +7,41 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>UserProfile</ion-title>
+    <ion-title>资料</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content style="background:rgb(247,247,247);">
+  <div class="settings">
+    <ion-list></ion-list>
+    <ion-list>
+      <button ion-item detail-none>
+        头像
+        <ion-avatar item-right>
+          <img src="assets/imgs/default_avatar.png">
+        </ion-avatar>
+      </button>
+      <button ion-item>
+        姓名
+        <ion-note item-right>tomwey</ion-note>
+      </button>
+      <button ion-item>
+        性别
+        <ion-note item-right>女</ion-note>
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item>
+        常用联系地址
+        <ion-note item-right>请设置地址</ion-note>
+      </button>
+      <button ion-item>
+        常用联系人
+        <ion-note item-right>请设置联系人</ion-note>
+      </button>
+    </ion-list>
+  </div>
+  
 </ion-content>
