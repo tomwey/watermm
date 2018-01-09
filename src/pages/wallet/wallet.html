@@ -10,7 +10,7 @@
     <ion-title>钱包</ion-title>
     <ion-buttons end>
       <button ion-button icon-only>
-        <ion-icon name="ios-setting-outline"></ion-icon>
+        <ion-icon name="ios-settings-outline"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -20,7 +20,7 @@
 <ion-content style="background:rgb(247,247,247);">
   <div class="user-caption">
     <table>
-      <tr>
+      <tr tappable (tap)="openUserProfile();">
         <td class="avatar">
           <img src="assets/imgs/default_avatar.png">
         </td>

@@ -21,4 +21,8 @@ export class WalletPage {
     console.log('ionViewDidLoad WalletPage');
   }
 
+  openUserProfile() {
+    
+  }
+
 }
