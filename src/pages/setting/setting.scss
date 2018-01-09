@@ -1,0 +1,34 @@
+page-setting {
+    .settings {
+        .list-ios {
+            margin-bottom: 15px;
+        }
+
+        .item-block:first-child, .item-block:last-child {
+            border: 0;
+        }
+
+        .item-block .item-inner {
+            border-color: #e6e6e6;
+        }
+
+        img {
+            max-width: 30px;
+        }
+        .item-ios {
+            padding-left: 10px;
+            h2 {
+                font-size: 14px;
+                color: #666;
+            }
+
+            ion-note {
+                font-size: 14px;
+            }
+        }
+
+        .item-ios [item-left] {
+            margin-right: 8px;
+        }
+    }
+}

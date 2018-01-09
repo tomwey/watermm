@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, App } from 'ionic-angular';
 
 /**
  * Generated class for the WalletPage page.
@@ -14,15 +14,33 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class WalletPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+    private app: App,
+    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad WalletPage');
+    
   }
 
   openUserProfile() {
-    
+    this.app.getRootNavs()[0].push('UserProfilePage');
+  }
+
+  openSetting() {
+    this.app.getRootNavs()[0].push('SettingPage');
+  }
+
+  openWaterTicket() {
+    this.app.getRootNavs()[0].push('WaterTicketPage');
+  }
+
+  openShare() {
+    this.app.getRootNavs()[0].push('SharePage');
+  }
+
+  openOrder() {
+    this.app.getRootNavs()[0].push('OrderPage');
   }
 
 }

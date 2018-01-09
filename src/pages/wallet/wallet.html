@@ -9,7 +9,7 @@
   <ion-navbar color="primary">
     <ion-title>钱包</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only>
+      <button ion-button icon-only (click)="openSetting();">
         <ion-icon name="ios-settings-outline"></ion-icon>
       </button>
     </ion-buttons>
@@ -36,32 +36,32 @@
   </div>
   <div class="settings">
     <ion-list>
-      <button ion-item>
+      <button ion-item (click)="openWaterTicket();">
         <img src="assets/imgs/icon_piao.png" item-left>
         <h2>水票</h2>
       </button>
-      <button ion-item>
+      <button ion-item (click)="openOrder();">
         <img src="assets/imgs/icon_order.png" item-left>
         <h2>订单</h2>
       </button>
     </ion-list>
     <ion-list>
-      <button ion-item>
+      <button ion-item (click)="openShare();">
         <img src="assets/imgs/icon_share.png" item-left>
         <h2>分享</h2>
       </button>
     </ion-list>
     <ion-list>
-      <button ion-item>
+      <ion-item>
         <img src="assets/imgs/icon_waterbi.png" item-left>
         <h2>水币</h2>
         <ion-note item-right>筹备中</ion-note>
-      </button>
-      <button ion-item>
+      </ion-item>
+      <ion-item>
         <img src="assets/imgs/icon_bounds.png" item-left>
         <h2>积分</h2>
         <ion-note item-right>筹备中</ion-note>
-      </button>
+      </ion-item>
     </ion-list>
   </div>
   
