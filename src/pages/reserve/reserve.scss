@@ -1,3 +1,26 @@
 page-reserve {
+    .card-ios, .card-md {
+        margin:20px;
+        // margin-top: 0;
+        width: calc(100% - 40px);
+        box-shadow: none;
+        border: 0.55px solid #e6e6e6;
+    }
 
+    .custom-item {
+        img {
+            max-width: 30px;
+        }
+
+        padding-left: 10px;
+
+        [item-left] {
+            margin-right: 8px;
+        }
+
+        h2 {
+            font-size: 14px;
+            color: #666;
+        }
+    }
 }
