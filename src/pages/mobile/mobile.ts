@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 
 /**
  * Generated class for the MobilePage page.
@@ -15,11 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MobilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+    private app: App,
+    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MobilePage');
+  }
+
+  confirm() {
+    this.app.getRootNavs()[0].push('PasswordPage');
   }
 
 }
