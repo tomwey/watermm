@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, App } from 'ionic-angular';
 
 /**
  * Generated class for the ReservePage page.
@@ -14,11 +14,21 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ReservePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+    private app: App,
+    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReservePage');
+  }
+
+  openContact(type) {
+    this.app.getRootNavs()[0].push('ContactInfoPage', { type: type });
+  }
+
+  openWaterTicket() {
+    this.app.getRootNavs()[0].push('WaterTicketPage');
   }
 
 }
