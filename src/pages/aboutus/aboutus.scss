@@ -1,3 +1,32 @@
 page-aboutus {
+    .qrcode {
+        padding: 20px;
+        text-align: center;
+        img {
+            max-width: 50%;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+        border-bottom: 0.55px solid #e6e6e6;
+        margin-bottom: 30px;
+    }
 
+    .other-infos {
+        table {
+            width: 100%;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .label, .value {
+            width: 50%;
+        }
+
+        .label {
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
 }
