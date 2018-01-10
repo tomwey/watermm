@@ -33,6 +33,10 @@ export class AddAddressPage {
     this.viewCtrl.dismiss();
   }
 
+  searchLocation() {
+    this.navCtrl.push('LocationSearchPage');
+  }
+
   ok() {
     if (this.formData.value1 && this.formData.value2) {
       this.viewCtrl.dismiss(this.formData);

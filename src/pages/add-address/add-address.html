@@ -20,7 +20,7 @@
 <ion-content style="background-color:rgb(247,247,247);">
     <ion-list></ion-list>
     <ion-list>
-      <button ion-item style="color:rgb(152,152,152);font-size:14px;">
+      <button ion-item style="color:rgb(152,152,152);font-size:14px;" (click)="searchLocation();">
         {{formData.value2 || '请点击设置小区'}}
         <!-- <ion-input placeholder="请点击设置小区" disabled></ion-input> -->
       </button>
