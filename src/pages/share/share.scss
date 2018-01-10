@@ -1,3 +1,44 @@
 page-share {
+    .qrcode {
+        padding: 20px;
+        text-align: center;
+        img {
+            max-width: 70%;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+        border-bottom: 0.55px solid #e6e6e6;
+        margin-bottom: 30px;
+        position: relative;
+    }
 
+    .qrcode::after {
+        content: '邀请';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        width: 30px;
+        margin-left: -15px;
+        text-align: center;
+        color: #666;
+        background: white;
+    }
+
+    .social-buttons {
+        padding: 0 30px;
+        ion-row, ion-col {
+            margin: 0;
+            padding: 0;
+        }
+        ion-col {
+            text-align: center;
+        }
+
+        img {
+            max-width: 50px;
+            // display: block;
+        }
+    }
 }

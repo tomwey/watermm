@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Order</ion-title>
+    <ion-title>订单</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="filter();">
+        <ion-icon name="ios-funnel-outline"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <div class="empty-box">
+    <img src="assets/imgs/empty_no_order.png">
+    <p>您还没有买水~</p>
+    <button ion-button outline small (click)="buy();">立即购买</button>
+  </div>
 </ion-content>

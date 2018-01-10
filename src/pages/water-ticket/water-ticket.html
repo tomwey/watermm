@@ -7,12 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>WaterTicket</ion-title>
+    <ion-title>水票</ion-title>
   </ion-navbar>
-
+  <div class="segment-box">
+      <ion-segment [(ngModel)]="useType" color="primary">
+        <ion-segment-button value="0">
+          未使用
+        </ion-segment-button>
+        <ion-segment-button value="1">
+          已使用
+        </ion-segment-button>
+      </ion-segment>
+    </div>
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content style="background:white;">
+  <div class="empty-box">
+    <img src="assets/imgs/empty_no_watercard.png">
+    <p>暂无相关水票信息~</p>
+  </div>
 </ion-content>
