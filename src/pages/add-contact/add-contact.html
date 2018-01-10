@@ -1,0 +1,33 @@
+<!--
+  Generated template for the AddContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <ion-buttons start>
+        <button ion-button icon-only (click)="close()">
+          <ion-icon name="ios-close-outline"></ion-icon>
+        </button>
+      </ion-buttons>
+    <ion-title>添加联系人</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content style="background-color:rgb(247,247,247);">
+    <ion-list></ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="请输入联系人" [(ngModel)]="formData.value1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="请输入联系人电话" pattern="[0-9]*" [(ngModel)]="formData.value2"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding-left padding-right>
+      <button ion-button block (click)="ok();">确定</button>
+    </div>
+</ion-content>

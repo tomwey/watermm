@@ -1,0 +1,19 @@
+page-add-address {
+    .item-block:first-child, .item-block:last-child {
+        border: 0!important;
+    }
+    
+    .item-block .item-inner {
+        border-color: #e6e6e6!important;
+        height: 50px;
+    }
+    
+    .item-ios {
+        font-size: 14px;
+        // height: 60px;
+    }
+
+    ion-input {
+        font-size: 14px!important;
+    }
+}
