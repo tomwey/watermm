@@ -44,8 +44,30 @@ export class OrderConfirmPage {
 
   }
 
-  selectPay(type) {
+  selectPay(item) {
+    this.payTypes.forEach(element => {
+      element.selected = false;
+    });
 
+    item.selected = true;
   }
+
+  payTypes: any = [
+    {
+      ID: 'zfb',
+      name: '支付宝',
+      selected: false,
+    },
+    {
+      ID: 'wx',
+      name: '微信',
+      selected: false,
+    },
+  ];
+
+  // time = {
+  //   min: new Date(),
+  //   max: (new Date().getTime() + 3 * 24 * 3600)
+  // }
 
 }

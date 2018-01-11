@@ -25,7 +25,12 @@
       </button>
       <button ion-item (click)="openDatePicker();">
         <img src="assets/imgs/timing.png" item-left>
-        <h2>今天17:30送达<span class="yj-time">（预计时间）</span></h2>
+        <ion-datetime displayFormat="预计今天 HH:mm送达"
+          min="08:00" max="19:50"
+          cancelText="取消" 
+          doneText="确定" 
+          placeholder="设置配送时间"></ion-datetime>
+        <!-- <h2>今天17:30送达<span class="yj-time">（预计时间）</span></h2> -->
       </button>
     </ion-list>
 
@@ -61,21 +66,27 @@
         <h2>水票</h2>
         <ion-note item-right>暂无该品牌的水票</ion-note>
       </ion-item>
-      <button ion-item detail-none (click)="selectPay(1);">
-        <img src="assets/imgs/zfb.png" item-left>
-        <h2>支付宝</h2>
+      <button ion-item detail-none *ngFor="let item of payTypes" (click)="selectPay(item);">
+        <img src="assets/imgs/{{item.ID}}.png" item-left>
+        <h2>{{item.name}}</h2>
+        <ion-note item-right>
+          <img src="assets/imgs/{{item.selected ? 'change' : 'nochange'}}.png" class="select-control">
+        </ion-note>
       </button>
-      <button ion-item detail-none (click)="selectPay(2);">
+      <!-- <button ion-item detail-none (click)="selectPay(2);">
         <img src="assets/imgs/wx.png" item-left>
         <h2>微信</h2>
-      </button>
+        <ion-note item-right>
+          <img src="assets/imgs/nochange.png" class="select-control">
+        </ion-note>
+      </button> -->
     </ion-list>
   </div>
 </ion-content>
 
 <ion-footer>
   <ion-item>
-    <p class="total-money">合计<span class="money">¥0.00</span></p>
+    <p class="total-money">合计<span class="money">¥600</span></p>
     <ion-note item-right>
       <button ion-button small (click)="confirm();">确定</button>
     </ion-note>

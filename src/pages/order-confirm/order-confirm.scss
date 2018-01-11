@@ -1,5 +1,13 @@
 page-order-confirm {
     .list-items {
+        .datetime-ios {
+            padding-left: 0;
+            font-size: 14px;
+            color: #333;
+            .datetime-placeholder {
+                color: #333;
+            }
+        }
         .list-ios {
             margin-bottom: 15px;
         }
@@ -134,5 +142,9 @@ page-order-confirm {
         .item-inner {
             border: 0!important;
         }
+    }
+
+    .select-control {
+        max-width: 18px!important;
     }
 }
